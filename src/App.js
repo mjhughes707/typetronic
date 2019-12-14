@@ -8,12 +8,24 @@ function App() {
     setText(value);
   }
 
+  function countWords(text) {
+    const wordsArr = text.trim().split(" ");
+    const filteredWords = wordsArr.filter(word => word !== "");
+    return filteredWords.length;
+  }
+
   return (
     <div>
       <h1>TypeTronic</h1>
       <textarea onChange={handleChange} value={text} />
       <h4>The amount of time remaining: </h4>
-      <button>START</button>
+      <button
+        onClick={() => {
+          countWords(text);
+        }}
+      >
+        START
+      </button>
       <h1>Word Count: </h1>
     </div>
   );
