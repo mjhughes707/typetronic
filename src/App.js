@@ -44,9 +44,15 @@ function App() {
   return (
     <div>
       <h1>TypeTronic</h1>
-      <textarea onChange={handleChange} value={text} />
+      <textarea
+        onChange={handleChange}
+        disabled={!isTimeRunning}
+        value={text}
+      />
       <h4>The amount of time remaining: {timeRemaining}</h4>
-      <button onClick={startGame}>START</button>
+      <button onClick={startGame} disabled={isTimeRunning}>
+        START
+      </button>
       <h1>Word Count: {wordCount}</h1>
     </div>
   );
