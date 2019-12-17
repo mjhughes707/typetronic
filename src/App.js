@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 
 function App() {
   const START_TIME = 5;
@@ -7,6 +7,7 @@ function App() {
   const [timeRemaining, setTimeRemaining] = useState(START_TIME);
   const [isTimeRunning, setIsTimeRunning] = useState(false);
   const [wordCount, setWordCount] = useState(0);
+  const textareaRef = useRef(null);
 
   function handleChange(e) {
     const { value } = e.target;
@@ -18,6 +19,8 @@ function App() {
     setWordCount(0);
     setTimeRemaining(START_TIME);
     setIsTimeRunning(true);
+    textareaRef.current.disabled = false;
+    textareaRef.current.focus();
   }
 
   function endGame() {
@@ -45,6 +48,7 @@ function App() {
     <div>
       <h1>TypeTronic</h1>
       <textarea
+        ref={textareaRef}
         onChange={handleChange}
         disabled={!isTimeRunning}
         value={text}
