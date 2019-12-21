@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/typetronic/static/css/main.4709c8b7.chunk.css",
+    "main.js": "/typetronic/static/js/main.d04ed666.chunk.js",
+    "main.js.map": "/typetronic/static/js/main.d04ed666.chunk.js.map",
+    "runtime-main.js": "/typetronic/static/js/runtime-main.42f0c838.js",
+    "runtime-main.js.map": "/typetronic/static/js/runtime-main.42f0c838.js.map",
+    "static/js/2.8121dd19.chunk.js": "/typetronic/static/js/2.8121dd19.chunk.js",
+    "static/js/2.8121dd19.chunk.js.map": "/typetronic/static/js/2.8121dd19.chunk.js.map",
+    "index.html": "/typetronic/index.html",
+    "precache-manifest.14e32805194e7b276bf63afdae9f26c1.js": "/typetronic/precache-manifest.14e32805194e7b276bf63afdae9f26c1.js",
+    "service-worker.js": "/typetronic/service-worker.js",
+    "static/css/main.4709c8b7.chunk.css.map": "/typetronic/static/css/main.4709c8b7.chunk.css.map",
+    "static/js/2.8121dd19.chunk.js.LICENSE": "/typetronic/static/js/2.8121dd19.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.42f0c838.js",
+    "static/js/2.8121dd19.chunk.js",
+    "static/css/main.4709c8b7.chunk.css",
+    "static/js/main.d04ed666.chunk.js"
+  ]
+}
